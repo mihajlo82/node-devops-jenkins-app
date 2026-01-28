@@ -1,5 +1,11 @@
-pipeline {
-    agent any
+pipeline { 
+   
+    agent {
+        docker {
+            image 'node:20'
+            args '-u root:root' // optional, if you need root permissions
+        }
+    }
 
     stages {
         stage('Checkout') {
