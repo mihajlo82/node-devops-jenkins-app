@@ -9,7 +9,7 @@ const VERSION = process.env.APP_VERSION || "local";
 
 app.get("/", (req, res) => {
   res.json({
-    status: "okk",
+    status: "okkgg",
     env: ENV,
     version: VERSION
   });
