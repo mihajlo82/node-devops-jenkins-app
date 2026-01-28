@@ -11,11 +11,12 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                checkout scm
-            }
+   
+    stage('Checkout') {
+        steps {
+            git url: 'https://github.com/mihajlo82/node-devops-jenkins-app.git', branch: 'master'
         }
+    }
 
         stage('Install Dependencies') {
             steps {
