@@ -42,7 +42,7 @@ pipeline {
                 sh 'docker run ...'
             }
         }
-        }
+        
     }
 
     post {
