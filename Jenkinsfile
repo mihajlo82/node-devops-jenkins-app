@@ -30,22 +30,18 @@ pipeline {
         }
 
         stage('Build Docker Image') {
+            when { expression { false } }
             steps {
                 sh 'docker build -t $IMAGE_NAME:$IMAGE_TAG .'
             }
         }
 
         stage('Deploy (Local)') {
+            when { expression { false } }
             steps {
-                sh '''
-                    # Stop old container if exists
-                    docker stop node-app || true
-                    docker rm node-app || true
-                    
-                    # Run new container
-                    docker run -d -p 3000:3000 --name node-app $IMAGE_NAME:$IMAGE_TAG
-                '''
+                sh 'docker run ...'
             }
+        }
         }
     }
 
