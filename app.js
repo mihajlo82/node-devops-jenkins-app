@@ -15,6 +15,10 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/house", (req, res) => {
+  res.json("<body><h1>HELLO FROM HOUSE</h1></body>")
+})
+
 app.get("/health", (req, res) => {
   res.status(200).send("healthy");
 });
