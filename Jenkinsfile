@@ -1,10 +1,9 @@
 pipeline { 
    
-    agent {
-        docker {
-            image 'node:20'
-            args '-u root:root' // optional, if you need root permissions
-        }
+   agent any
+
+    tools {
+        nodejs 'NodeJS 20' // must match the name in Jenkins global config
     }
 
     stages {
