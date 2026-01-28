@@ -11,6 +11,12 @@ pipeline {
     }
 
     stages {
+
+    stage('Clean Workspace') {
+        steps {
+            deleteDir() // wipes out the workspace before anything else
+        }
+}
    
     stage('Checkout') {
         steps {
