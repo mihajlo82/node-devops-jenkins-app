@@ -16,7 +16,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/house", (req, res) => {
-  res.json("<body><h1>HELLO img22 FROM HOUSE</h1></body>")
+  res.json("<div><h1>HELLO img22 FROM HOUSE</h1></div>")
+})
+
+app.get("/crazy", (req, res) => {
+  res.end("<div><h1>HELLO CRAZYYYY</h1></div>")
 })
 
 app.get("/health", (req, res) => {
