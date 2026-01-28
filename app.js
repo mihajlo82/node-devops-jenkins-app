@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/house", (req, res) => {
-  res.json("<body><h1>HELLO img FROM HOUSE</h1></body>")
+  res.json("<body><h1>HELLO img22 FROM HOUSE</h1></body>")
 })
 
 app.get("/health", (req, res) => {
