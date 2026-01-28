@@ -19,6 +19,10 @@ app.get("/house", (req, res) => {
   res.json("<div><h1>HELLO img2244 FROM HOUSE</h1></div>")
 })
 
+app.get("/elena", (req, res) => {
+  res.json("<div><h1>HELLO ELENA</h1></div>")
+})
+
 app.get("/crazy", (req, res) => {
   res.end("<div><h1>HELLO CRAZYYYY</h1></div>")
 })
